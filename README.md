@@ -14,4 +14,4 @@ Criação de um site em colaboração, com as caracteristicas de um CRUD.
 
 N.      |COLABORADOR    |LOCALIDADE     |
     :------------:  |  :---------------| :---------------|
-1   |[Max Sueel Gomes da Silva](https://github.com/MaxSueel)|Igarassu - PE
+1   |[Max Sueel Gomes da Silva](https://github.com/MaxSueel)    |Igarassu - PE
