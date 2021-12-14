@@ -6,7 +6,7 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background-color: #29271fd0;
+  background-color: #f0c312d0;
 }
 
 .row {
@@ -47,6 +47,7 @@ mainSlider .carousel-item {
   height: 90vh;
   width: 10%;
   height: 10%;
+  
 }
 
 .projetos {
@@ -91,4 +92,14 @@ mainSlider .carousel-item {
   color: #000000;
   transition: color 1s;
   font-weight: bold;
+}
+
+.img-quem-somos{
+  width: 500px
+  display: inline-block;
+  align-items: center;
+}
+
+.navbar{
+  margin-top: 10px;
 }
