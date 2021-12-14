@@ -4,115 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Projeto Integrador</title>
   </head>
-  <body>
-    
-    <div class="container">
 
-       
-          <img class="foto-inicial" src="img/FOTO INICIAL.jpg">
-          <ul class="menu">
-            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="#conhecimentos" class="menu-link">Cardapio</a></li>
-            <li class="menu-item"><a href="#projetos" class="menu-link">Promoções</a></li>
-            <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-            <li class="menu-item"><a href="#orcamento" class="menu-link">Quem Somos</a></li>
+
+  <body> 
+
+    <nav class="navbar navbar-fixed-top navbar-expand-lg  navbar-light bg-warning">
+
+     <div class="container">
+
+        <a class="navbar-brand h1 mb-0" href="#">Home</a>
+
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+
+          <ul class="navbar-nav mr-auto" >
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cardapio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
           </ul>
-        
-        
 
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="img/img_entrada.jpeg" alt="">
-            </div>
-        </header>
+          <ul class="navbar-nav ml-auto">
 
-        <section class="sessao-conhecimentos" id="conhecimentos">
-          <div class="sessao-header">
-            <h1>Cardapio</h1>
-          </div>
-          <div class="img-cardapio">
-            <img src="img/Cardápio Dim's Burger1.jpg" alt="Cardapio">
-          </div>
-        </section>
-
-        <div class="sessao-projetos" id="projetos">
-          <div class="sessao-header">
-            <h1>Promoções</h1>
-          </div>
-          <div class="projetos">
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/PROMOÇÃO DIA DAS MÃES.jpg" alt="imagem do projeto ToDo" />
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggler" href="#" data-toggle="dropdown" id="navDrop">
+                Social
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Instagran</a>
+                <a class="dropdown-item" href="#">Whatsapp</a>
               </div>
-            
+            </li>
+
+          </ul>
+
+          <form class="form-inline">
+            <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+            <button class="btn btn-dark" type="Submit">Ok</button>
+          </form>
+
+        </div>
+     </div>
+
+    </nav>
+
+  
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <img src="img/carousel-01.jpeg" class="d-block w-100" alt="Projetos de software">
+            <div class="carousel-caption d-md-block">
             </div>
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/PROMOÇÃO DIA DO HAMBURGUER.jpg" alt="imagem do projeto Maratona" />
-              </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/carousel-02.jpg" class="d-block w-100" alt="Engenharia de software">
+            <div class="carousel-caption d-md-block">
+           
               
             </div>
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="img/METADINHA.jpg" alt="imagem do projeto Casa Bela" />
-              </div>
-             
-            </div>
           </div>
 
-        </section>
-
-        <section class="sessao-contato" id="contato">
-          <div class="contato-wrapper">
-            <div class="contato-left"></div>
-            <div class="contato-right">
-              <h1>Contato</h1>
-              <form>
-                <div class="input-group">
-                  <input type="text" class="field" id="nome">
-                  <label for="nome" class="field-label">Nome</label>
-                </div>
-                <div class="input-group">
-                  <input type="text" class="field" id="email">
-                  <label for="email" class="field-label">E-mail</label>
-                </div>
-                <div class="input-group">
-                  <textarea class="field" id="mensagem"></textarea>
-                  <label for="mensagem" class="field-label">Mensagem</label>
-                </div>
-                <button type="submit" class="btn btn-submit">Enviar</button>
-              </form>
+          <div class="carousel-item">
+            <img src="img/carousel-03.jpg" class="d-block w-100" alt="Manutenção em software">
+            <div class="carousel-caption d-md-block">
+            
             </div>
           </div>
-        </section>
+        </div>
 
-        
-
-        <footer>
-          <div class="footer-content">
-            <p>
-              Copyright &copy; 2021, DIGI TALLS - Todos os diretos reservados
-            </p>
-            <div class="social-list">
-              <ul>
-                <li><a href="https://www.facebook.com/Digi-Talls-419499525651123"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/digi_talls/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/GilvaneideGomes"><i class="fab fa-twitter"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-        <a href="#home" id="link-topo">
-          <i class="fas fa-arrow-up"></i>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
         </a>
-    </div>
-   </body>
+
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+      <div class="nav-item nav-link" id="menu-promoção">
+        <div class="sessao-titulo">
+          <h1>Promoções</h1>
+          <a href= "#menu-promoção">
+          </a>
+        </div>
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="img/promocao-01.jpg" alt="imagem do projeto ToDo" />
+            </div>
+          
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="img/promocao-02.jpg" alt="imagem do projeto Maratona" />
+            </div>
+            
+          </div>
+          
+        </div>
+
+      </section>
+  
+    </section>
+
+    <div class="menu-cardapio" id="cardapio">
+      <div class="sessao-titulo">
+        <h1>Cardápio</h1>
+        <a href= "cardapio">
+        </a>
+      </div>
+      <div class="projetos">
+        <div class="card-2">
+          <div class="card-dims">
+            <img src="img/Cardápio Dim's Burger1.jpg" alt="imagem do projeto Maratona" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+         
+
+             
+
+
+
+      
+
+   
+  </body>
+
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+   <script src="node_modules/popper.js/dist/popper.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
    <script src="script.js"></script>
 </html>
