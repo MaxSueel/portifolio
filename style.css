@@ -6,7 +6,7 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background-color: #f0c312d0;
+  background-color: hsl(32, 93%, 62%);
 }
 
 .row {
@@ -20,20 +20,20 @@ body {
 
 p,
 li {
-  color: #444;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
 /* Barra de navegação*/
 
-header,
-navbar {
-
-}
 
 #logo {
   width: 110px;
 }
+.navbar{
+ background-color: hsl(32, 93%, 62%);
+}
+
 
 .img-wapper {
   width: 80%;
@@ -49,6 +49,7 @@ mainSlider .carousel-item {
   height: 10%;
   
 }
+
 
 .projetos {
   display: flex;
@@ -84,22 +85,151 @@ mainSlider .carousel-item {
 
 .sessao-titulo{
   text-align: center;
-}
-
-.home-menu {
-  font-family: var(--font-action);
-  font-size: 2rem;
-  color: #000000;
-  transition: color 1s;
-  font-weight: bold;
+  
 }
 
 .img-quem-somos{
   width: 500px
-  display: inline-block;
+  display inline-block;
   align-items: center;
 }
 
 .navbar{
   margin-top: 10px;
 }
+
+.sessao-cadastro {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(32, 93%, 62%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cadastro-wrapper {
+  width: 60%;
+  height: 30rem;
+  display: flex;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.cadastro-left {
+  width: 35%;
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(imagens/contato.jpg);
+  background-size: cover;
+}
+
+.cadastro-right {
+  width: 65%;
+  background-color: #eee;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-cadastro h1 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-primary);
+  color: #000000;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.sessao-cadastro form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field {
+  background: transparent;
+  border: none;
+  width: 20rem;
+  font-size: 1.5rem;
+  font-family: var(--font-secundary);
+  border-bottom: 2px dashed #636363;
+  height: 3rem;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.input-group textarea {
+  padding-top: 1rem;
+  max-width: 25rem;
+  max-height: 3rem;
+}
+
+.field-label {
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-secundary);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.field:focus ~ label {
+  top: 0;
+  font-size: 0.7rem;
+}
+
+.field:focus {
+  border-bottom: 1px solid;
+}
+
+.btn-submit {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 80%;
+  height: 2.5rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+.menu-cardapio{
+  background-color: hsl(32, 93%, 62%);  
+}
+.menu-quem-somos{
+  background-color: white;  
+}
+
+footer{
+  width: 100%;
+  height: 5rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer-content p{
+  font-family: var(--font-secundary);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social-list a{
+  margin: 0 2rem;
+  color: #000000;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+
+
+
+

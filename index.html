@@ -12,7 +12,7 @@
 
   <body> 
 
-    <nav class="navbar navbar-fixed-top navbar-expand-lg  navbar-light bg-warning">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg  navbar-light ">
 
      <div class="container">
 
@@ -27,29 +27,28 @@
           <ul class="navbar-nav mr-auto" >
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Promoções</a>
+              <a class="nav-link" href="#menu-promoção">Promoções</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cardapio</a>
+              <a class="nav-link" href="#cardapio">Cardápio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quem Somos</a>
+              <a class="nav-link" href="#quem-somos">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#cadastro">Cadastro</a>
             </li>
           </ul>
 
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggler" href="#" data-toggle="dropdown" id="navDrop">
-                Social
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Facebook</a>
-                <a class="dropdown-item" href="#">Instagran</a>
-                <a class="dropdown-item" href="#">Whatsapp</a>
+              
+              <div class="social-list">
+                <ul>
+                  <li><a href="https://www.instagram.com/dimsburguer/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=5581998898938&text=Opa,%20me%20v%C3%AA%20um%20Dim%27s%20%F0%9F%91%8A%F0%9F%8F%BB%F0%9F%94%A5s"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
               </div>
             </li>
 
@@ -119,13 +118,13 @@
         <div class="projetos">
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/promocao-01.jpg" alt="imagem do projeto ToDo" />
+              <img src="img/PROMOÇÃO DIA DAS MÃES.jpg" alt="imagem do projeto ToDo" />
             </div>
           
           </div>
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/promocao-02.jpg" alt="imagem do projeto Maratona" />
+              <img src="img/PROMOÇÃO DIA DO HAMBURGUER.jpg" alt="imagem do projeto Maratona" />
             </div>
             
           </div>
@@ -148,7 +147,7 @@
       </div>
    
      <section>
-      <div class="menu-cardapio" id="cardapio">
+      <div class="menu-quem-somos" id="quem-somos">
         <div class="sessao-titulo">
           <h1>Quem Somos</h1>
           <a href= "cardapio"></a>
@@ -161,20 +160,42 @@
           </div>
         </div>
       <div class="imagem-quem-somos">
-        <img src="img/parrilha.jpg"
+        <img src="img/parrilha.jpg">
       </div>
-       
+       </section>
 
-
+       <section class="sessao-cadastro" id="cadastro">
+        <div class="cadastro-wrapper">
+          <div class="cadastro-left"></div>
+          <div class="cadastro-right">
+            <h1>Cadastro</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="nome">
+                <label for="nome" class="field-label">Nome</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email">
+                <label for="email" class="field-label">E-mail</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field" id="mensagem"></textarea>
+                <label for="mensagem" class="field-label">Mensagem</label>
+              </div>
+              <button type="submit" class="btn btn-submit">Enviar</button>
+            </form>
+          </div>
+        </div>
       </section>
 
-         
-
-             
-
-
-
-      
+      <footer>
+        <div class="footer-content">
+          <p>
+            Copyright &copy; 2021, Dim's Burguer - Todos os diretos reservados
+          </p>
+          
+        </div>
+      </footer>       
 
    
   </body>
